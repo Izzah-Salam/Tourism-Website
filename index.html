@@ -13,7 +13,7 @@
     <div class="w-full bg-cover min-h-screen opacity-75" style="background-image: url(./img/background.avif);">
       <nav class="flex items-center justify-between px-20 py-5">
         <h1 class=""><img src="." alt="" class=""></h1>
-        <div >
+        <div class="md:block hidden">
           <ul class="flex tracking-wide font-semibold text-xl uppercase space-x-8 " >
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
@@ -21,8 +21,12 @@
             <li><a href="">Contact Us</a></li>
           </ul>
         </div>
+        <!-- Toggle -->
+        <div class="md:hidden block">
+          <img src="./img/toggle.webp" alt="">
+        </div>
       </nav>
-      <div class="flex flex-col justify-center items-center   mt-64">
+      <div class="flex flex-col justify-center items-center text-center mt-64">
         <h1 class="text-4xl uppercase tracking-wide font-bold  mx-10">A new Exploration of spritual lands</h1>
         <h3 class="text-sky-800 m-5">Discover and experience iconic destinations in Phuket with our extraordinarily boats, excellent services and pleasurable food.</h3>
         <button class="border-solid border-2 border-sky-600 text-sky-600 py-2 px-4  hover:bg-white hover:transition">EXPLOUR TOURS</button>
@@ -35,9 +39,9 @@
       <h2 class="mx-4 text-xl font-semibold uppercase">About Us</h2>
       <hr class="flex-grow border-t-2 border-sky-400">
     </div>
-    <div class="grid grid-cols-2 gap-10 px-20 items-start ">
-      <div ><img src="./img/about.jpg" alt="" class="0"></div>
-      <div class="pt-20 leading-10 text-justify">
+    <div class="grid md:grid-cols-2 grid-cols-1 gap-10 px-20  ">
+      <div class="flex justify-center"><img src="./img/about.jpg" alt="" class="0"></div>
+      <div class=" leading-10 text-justify">
         At <span class="text-sky-400 font-semibold">Horizon Explorers</span> , we're passionate about 
         creating unforgettable travel experiences.
          With personalized service and expert guidance,
@@ -58,7 +62,7 @@
       <hr class="flex-grow border-t-2 border-sky-400">
     </div>
     <div class="container mx-auto py-8">
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 px-20 text-center">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-12 px-20 text-center">
         <div class="card p-4">
           <img src="./img/germany.jpg" alt="Place 1" class="rounded-lg mb-4 inline">
           <h3 class="text-lg font-semibold mb-2 uppercase">Germany</h3>
@@ -78,12 +82,12 @@
     </div>
 
     <footer class="bg-sky-600 text-white pt-12 mt-20">
-      <div class="container mx-auto  px-4">
+      <div class="container px-4">
         <div class="mb-6 lg:mb-0 text-center">
           <h2 class="text-2xl font-semibold">Contact Us</h2>
           <p class="mt-2">Have questions or need assistance? Get in touch with us!</p>
         </div>
-        <form class="flex flex-col space-y-5 mt-5 px-80 text-black">
+        <form class="flex flex-col space-y-5 mt-5 px-20 text-black">
           <input type="text" placeholder="Your Name" class="py-2 px-4 bg-gray-200 rounded-md focus:outline-none focus:bg-white transition duration-300">
           <input type="email" placeholder="Your Email" class="py-2 px-4 bg-gray-200 rounded-md focus:outline-none focus:bg-white transition duration-300">
           <textarea placeholder="Your Message" rows="4" class="py-2 px-4 bg-gray-200 rounded-md focus:outline-none focus:bg-white transition duration-300"></textarea>
