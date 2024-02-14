@@ -10,20 +10,25 @@
   </head>
   <body class="w-[100%] h-[100%]">
     <div class="min-h-screen">
-    <div class="w-full bg-cover min-h-screen opacity-75" style="background-image: url(./img/background.avif);">
-      <nav class="flex items-center justify-between px-20 py-5">
-        <h1 class=""><img src="." alt="" class=""></h1>
-        <div class="md:block hidden">
-          <ul class="flex tracking-wide font-semibold text-xl uppercase space-x-8 " >
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Contact Us</a></li>
-          </ul>
-        </div>
-        <!-- Toggle -->
-        <div class="md:hidden block">
-          <img src="./img/toggle.webp" alt="">
+    <div id="home" class="w-full bg-cover min-h-screen opacity-75" style="background-image: url(./img/background.avif);">
+      
+      <nav class="flex items-center md:flex-row flex-col justify-between px-32 py-5">
+        <h1 class="text-white font-semibold text-2xl">Horizon Explorers</h1>
+        
+        <div class="md:flex md:items-center md:justify-end">
+          <!-- Toggle -->
+          <div class="md:hidden flex justify-end w-10">
+            <img src="./img/toggle.png" alt="" class="w-20" id="toggle-btn">
+          </div>
+          
+          <div class="md:block hidden show-links" id="links-container">
+            <ul class="md:flex tracking-wide font-semibold uppercase md:space-x-8 md:space-y-0 space-y-4 text-white" id="links">
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
       <div class="flex flex-col justify-center items-center text-center mt-64">
@@ -94,9 +99,9 @@
           <button type="submit" class="bg-sky-800 hover:bg-gray-300 text-white hover:text-black py-2 px-6 rounded-md transition duration-300">Send Message</button>
         </form>
       </div>
-      <div class="container mx-auto mt-8 py-2 flex items-center justify-center bg-sky-800 text-white">
+      <div class="container mx-auto mt-8 py-2 flex items-center justify-center bg-black text-white">
         
-       ALL RIGHTS RESERVED BY IZZAH SALAM
+       <p> All copyrights &copy; reserved by Izzah salam <span id="date"></span></p>
         </div>
       </div>
     </footer>

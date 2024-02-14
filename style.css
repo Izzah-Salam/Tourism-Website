@@ -17,3 +17,24 @@
   transform: scale(1.05); /* Scale up on hover */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
 }
+
+/* Hide the links container by default */
+#links-container {
+  display: none;
+}
+
+/* Define styles for the toggle button on small screens */
+@media screen and (max-width: 767px) {
+  #toggle-btn {
+    order: 2; /* Move toggle button to the end */
+    margin-right: 20px; /* Add some space between toggle button and links */
+  }
+}
+
+/* Define styles for the links container on small screens */
+@media screen and (max-width: 767px) {
+  .show-links {
+    display: block; /* Show the links container when it has the show-links class */
+    margin-top: 10px; /* Add some space between toggle button and links */
+  }
+}
