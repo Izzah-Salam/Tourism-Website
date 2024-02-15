@@ -13,6 +13,5 @@ var Links = document.getElementById("links")
 
 toggleBtn.addEventListener("click",function(){
     console.log("you click the toggle btn");
-    LinksContainer.classList.remove("hidden")
     LinksContainer.classList.toggle("show-links")
 })
