@@ -13,5 +13,5 @@ var Links = document.getElementById("links")
 
 toggleBtn.addEventListener("click",function(){
     console.log("you click the toggle btn");
-    LinksContainer.classList.toggle("show-links")
+    LinksContainer.classList.remove("-translate-y-[100%]")
 })
