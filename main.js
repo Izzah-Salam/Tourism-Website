@@ -25,12 +25,14 @@ toggleBtn.addEventListener("click",function(){
 
 const body = document.body; // Define the body variable
 const navbar = document.getElementById("navbar");
+const colour = document.querySelector(".colour")
 
 window.addEventListener("scroll", () => {
    const scrollHeight = window.pageYOffset;
    if (scrollHeight > 0) {
-      navbar.style.background = "black";
-
+      navbar.style.background = "blue";
+       
+      
    } else {
       navbar.style.background = ""; // Reset to original background color when back to top
    }
