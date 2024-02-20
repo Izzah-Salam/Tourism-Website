@@ -6,7 +6,9 @@ export default {
   ],
   theme: {
     extend: {
-     
+     container:{
+      centre: true
+     }
     },
   },
   plugins: [],

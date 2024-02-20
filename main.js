@@ -30,7 +30,7 @@ const colour = document.querySelector(".colour")
 window.addEventListener("scroll", () => {
    const scrollHeight = window.pageYOffset;
    if (scrollHeight > 0) {
-      navbar.style.background = "blue";
+      navbar.style.background = "skyBlue";
        
       
    } else {
